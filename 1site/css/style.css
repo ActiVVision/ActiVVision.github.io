@@ -1,0 +1,273 @@
+@import url('../css/reset.css');
+
+body {
+    font-family:Tahoma, sans-serif;
+    color:#333333;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Основной контейнер*/
+
+.container {
+    width: 100%;
+    background-color: #fff;
+}
+/*контейнер, ограничивающий ширину контента*/
+
+.container-wrap {
+    width: 100%;
+    max-width: 930px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+.header {
+    width:100%;
+}
+
+/*Общий стиль заголовков каждого блока*/
+.header__title, .features__title, .client__title {
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.header__subtitle {
+    margin-top:120px;
+    margin-bottom:12px;
+
+}
+
+.header__title {
+    margin-bottom:85px;
+}
+
+/* Контейнер с видео*/
+.main {
+    display:flex;
+    justify-content: space-between;
+}
+
+.main__video {
+    padding-right:31px;
+}
+
+/* Форма */
+.main__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border:5px solid #2727d9;
+    line-height: 0;
+    padding:22px;
+}
+
+.main__form_subtitle {
+    font-size:20px;
+    padding-top: 11px;
+    padding-bottom: 38px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.input {
+    font-size: 18px;
+    padding: 17px;
+    margin-bottom:10px;
+    border: 1px solid #333333;
+}
+
+/* Общий стиль кнопок*/
+.btn {
+    font-family:Tahoma, sans-serif;
+    font-size: 18px;
+    color:#ffffff;
+    text-align: center;
+    background-color: #3c3cdd;
+    border:none;
+    outline: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #2828d4c5;
+}
+
+.main__form_btn {
+    padding:23px 0;
+    margin-bottom:7px;
+}
+
+/*Features*/
+
+.features {
+    width:100%;
+}
+
+.features__title {
+    margin-top: 146px;
+    margin-bottom: 85px;
+}
+
+.features__items {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.features__column {
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+}
+
+.column__subtitle {
+    font-size:16px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 92px;
+}
+
+.features_btn {
+    padding:23px 58px;
+    margin:0 auto;
+    display: block;
+}
+
+/* client__group */
+
+.client__group {
+    width:100%;
+    margin-bottom: 99px;
+}
+
+.client__title {
+    margin-top: 101px;
+    margin-bottom: 72px;
+}
+
+.client__list {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    grid-column-gap:25px;
+    grid-row-gap:33px;
+}
+
+/* Медиазапросы (типа адаптив) */
+@media (min-width: 580px) and (max-width: 970px) {
+
+/* Основной контейнер*/
+
+.container-wrap {
+     width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+.main {
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__video {
+    padding-right: 0;
+    margin-bottom: 10px;
+}
+
+.main__form {
+    width: 495px;
+}
+
+/* client__group */
+
+.client__list {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-column-gap:0px;
+    grid-row-gap:23px;
+}
+}
+
+@media screen and (max-width: 580px) {
+
+/*Основной конттейнер*/
+
+.container-wrap {
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+/*header*/
+/*Общий стиль заголовков каждого блока*/
+
+.header__subtitle, .header__title, .features__title, .client__title {
+    font-size: 14px;
+}
+
+.header__subtitle {
+    margin-top:20px;
+}
+
+.header__title {
+    margin: 10px 5px 15px 5px
+}
+
+.main {
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__video {
+    padding-right: 0;
+    margin-bottom: 10px;
+}
+
+.main__video_play {
+    width:310px;
+    height:207px;
+}
+
+.main__form {
+    width:256px;
+}
+
+/*Features*/
+
+.features__title {
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.features__items {
+    flex-wrap: wrap;
+}
+
+.column__subtitle {
+    font-size:14px;
+    margin-bottom: 32px;
+}
+
+.features_btn {
+    font-size: 14px;
+    padding:18px 36px;
+}
+
+/* client__group */
+
+.client__title {
+    margin-top: 20px;
+    margin-bottom: 22px;
+}
+
+.client__list {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap:5px;
+    grid-row-gap:5px;
+}
+}
