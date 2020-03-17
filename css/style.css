@@ -15,7 +15,7 @@ body {
     display: flex;
     border-radius: 10px;
     background-color: #fff;
-    margin-top:20px;
+    margin:10px;
     padding: 7px;
 }
 
@@ -82,8 +82,7 @@ body {
     border-radius: 10px;
     padding:20px;
     background-color: #fff;
-    margin-top:20px;
-    margin-bottom: 20px;
+    margin:10px;
 }
 
 .projects {
@@ -123,3 +122,41 @@ body {
     transition: all 1s;
 }
 
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .my-projects {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 520px) and (max-width: 768px) {
+    .my-projects {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 520px) {
+    .userpic {
+        width:50px;
+        height: 50px;
+    }
+    .author-name {
+        font-size: 16px;
+    }
+    .country-live {
+        font-size:12px;
+    }
+    .skills {
+        font-size: 14px;
+        padding:3px;
+    }
+    .my-projects {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+}
