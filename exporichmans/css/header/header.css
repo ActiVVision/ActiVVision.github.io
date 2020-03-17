@@ -1,0 +1,46 @@
+.header {
+    background-image: url(/img/headerbackground.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.header-top {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+}
+
+
+.logo-img {
+    width:175px;
+    height: 24px;
+    margin: 33px 0px 33px 0;
+}
+
+.header-top__menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top-menu__link {
+    margin-right: 15px;
+}
+
+.header-wrap {
+    display: flex;
+}
+
+.header-wrap__content-left {
+    flex-basis: 50%;
+}
+
+.content-left-wrap {
+    margin: 228px 80px 160px 405px;
+}
+
+.content-right-wrap {
+    margin: 305px 405px 55px 80px;
+}
