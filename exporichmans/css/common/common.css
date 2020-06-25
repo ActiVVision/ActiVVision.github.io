@@ -1,0 +1,34 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, p [class*="title"] {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+p  {
+    cursor: default;
+   }
+
+.top-title-events-news {
+    font-size: 30px;
+    color: #2E373B;
+}
+
+.top-link-events-news {
+    font-size: 21px;
+    color: #2E373B;
+    font-weight: 600;
+}
+
+.top-link-events-news:hover {
+    text-decoration: underline;
+}

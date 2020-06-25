@@ -1,0 +1,37 @@
+.side-menu {
+    background-color: #2378FC;
+    width: 100%;
+}
+
+.side-menu-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1112px;
+    margin: 0 auto;
+    padding-top:80px;
+    padding-bottom: 77px;
+}
+
+.menu-list__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-list__title {
+    font-size: 30px;
+}
+
+.menu-list__link {
+    margin-top:25px;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.menu-list__link:first {
+    margin-top:35px;
+
+}
+
+.menu-list__link:hover {
+    text-decoration: underline;
+}
